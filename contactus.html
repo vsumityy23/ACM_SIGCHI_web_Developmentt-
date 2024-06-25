@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar" >
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item" id="home"><a href="index.html">Home</a></li>
+            <li class="nav-item" id="about"><a href="about.html">About</a></li>
+            <li class="nav-item" id="services"><a href="project.html">Projects</a></li>
+            <li class="nav-item" id="contact"><a href="team.html">Team</a></li>
+            <li class="nav-item" id="contact"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="carousel">
+        <div class="carousel-item">
+            <div id="parallax-bg-contactus"></div>
+            <div class="content">
+                <h1 id="main-heading">CONTACT US</h1>
+            </div>
+        </div>
+    </div>
+
+<section class="contact-form">
+    <div class="container">
+        <div class="row">
+            <form method="POST" action="sendmail.php" class="col-md-12 d-flex flex-wrap">
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="block">
+                        <div class="form-group">
+                            <input required="true" name="user_name" type="text" class="form-control"
+                                placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input required="true" name="user_email" type="email" class="form-control"
+                                placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input required="true" name="user_subject" type="text" class="form-control"
+                                placeholder="Subject">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 mb-3">
+                    <div class="block">
+                        <div class="form-group">
+                            <textarea required="true" name="user_message" class="form-control" rows="4"
+                                placeholder="Your Message"></textarea>
+                        </div>
+                        <button class="btn btn-custom" type="submit">Send Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="contact-box row mt-5">
+            <div class="col-md-6 col-sm-12 mb-3">
+                <div class="block">
+                    <h2>Reach Us</h2>
+                    <ul class="address-block list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> Location: IIT KANPUR</li>
+                        <li><i class="fas fa-envelope"></i> Email: acmsigchi@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> Phone: 1234567890</li>
+                    </ul>
+                    <ul class="social-icons list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/groups/acmsigchi/"
+                                class="fab fa-facebook-f"></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/sigchi.iitk/"
+                                class="fab fa-instagram"></a></li>
+                        <li class="list-inline-item"><a
+                                href="https://www.linkedin.com/company/iitksigchi/posts/?feedView=all"
+                                class="fab fa-linkedin-in"></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com/channel/UCyaWg69RnCbq9akLuW7nx-Q"
+                                class="fab fa-youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are a student-led
+                    initiative at IIT Kanpur dedicated to
+                    making Human-Computer Interaction (HCI) more accessible and intuitive.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Address: IIT Kanpur, Kanpur, India</p>
+                <p>Email: acmsigchi@gmail.com</p>
+                <p>Phone: +123456789</p>
+            </div>
+            <div class="footer-section">
+                <h3>Subscribe</h3>
+                <p>Stay updated with our latest articles and news.</p>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/groups/acmsigchi/" class="social-icon"><i
+                            class="fab fa-facebook-f"></i></a>
+                </li>
+                <li><a href="https://www.youtube.com/channel/UCyaWg69RnCbq9akLuW7nx-Q" class="social-icon"><i
+                            class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/sigchi.iitk/" class="social-icon"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/iitksigchi/posts/?feedView=all" class="social-icon"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ACM SIGCHI. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
